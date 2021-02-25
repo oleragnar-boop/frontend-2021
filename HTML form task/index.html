@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form task</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <form class="contact_form" action="index.html" name="contact_form">
+        <ul>
+            <li>
+                <h2>Contact Us</h2>
+                <span class="required_notification">*Denotes required field</span>
+            </li>
+            <li>
+                <label for="name">Name*</label>
+                <input type="text" name="name" id="name" placeholder="Ole Ragnar Randen" title="At least first and last name, no initials" pattern="(\w{2,})( \w{2,})+" required>
+            </li>
+            <li>
+                <label for="email">Email*</label>
+                <input type="email" name="email" id="email" placeholder="oleerkul@kjempekul.no" required>
+            </li>
+            <li>
+                <label for="website">Website*</label>
+                <input type="url" name="website" id="website" placeholder="https://www.kulegutter.no" required>
+            </li>
+            <li>
+                <label for="birthdate">Birthdate</label>
+                <input type="date" name="birthdate" id="birthdate">
+            </li>
+            <li>
+                <label for="message">Message*</label>
+                <textarea id="message" name="message" placeholder="Write a message..." required></textarea>
+            </li>
+            <li>
+                <input type="submit" value="Submit">
+            </li>
+            <li>
+                <input type="reset" value="Reset">
+            </li>
+        </ul>
+    </form>
+</body>
+</html>
